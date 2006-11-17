@@ -1,0 +1,33 @@
+diff -urN transkode-0.5/src/worker/transkodefilejob.cpp transcode-0.5.new/src/worker/transkodefilejob.cpp
+--- transkode-0.5/src/worker/transkodefilejob.cpp	2006-05-02 00:10:55.000000000 +0200
++++ transcode-0.5.new/src/worker/transkodefilejob.cpp	2006-11-17 13:59:06.432983250 +0100
+@@ -39,7 +39,7 @@
+ QMutex TransKodeFileJob::s_fileTypeResolverMutex( true );
+ 
+ TransKodeFileJob::TransKodeFileJob( const TransKodeConfig& cfg, const QString& srcPath, const QString& profile ):
+-	m_jobID( (int)this ),
++	m_jobID( (long)this ),
+ 	m_config( cfg ),
+ 	m_jobMutex( true ), // recursive mutex
+ 	m_worker( 0 ),
+@@ -67,7 +67,7 @@
+ }
+ 
+ TransKodeFileJob::TransKodeFileJob( const TransKodeConfig& cfg, const QString& srcPath ):
+-	m_jobID( (int)this ),
++	m_jobID( (long)this ),
+ 	m_config( cfg ),
+ 	m_jobMutex( true ), // recursive mutex
+ 	m_worker( 0 ),
+diff -urN transkode-0.5/src/worker/transkodefileworker.cpp transcode-0.5.new/src/worker/transkodefileworker.cpp
+--- transkode-0.5/src/worker/transkodefileworker.cpp	2006-05-01 05:35:44.000000000 +0200
++++ transcode-0.5.new/src/worker/transkodefileworker.cpp	2006-11-17 13:58:49.199906250 +0100
+@@ -31,7 +31,7 @@
+ 
+ 	m_logger( logger ),
+ 	m_config( cfg ),
+-	m_workerID( (int)this ),
++	m_workerID( (long)this ),
+ 	m_autoRefresh( autoRefresh ),
+ 
+ 	m_threadPaused( 0 ),
