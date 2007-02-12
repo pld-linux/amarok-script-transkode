@@ -5,7 +5,7 @@
 %define		scriptname	transkode
 %define		_id		27512
 Summary:	Transkode amaroK Script
-Summary(pl):	Skrypt Transkode dla amaroKa
+Summary(pl.UTF-8):   Skrypt Transkode dla amaroKa
 Name:		amarok-script-transkode
 Version:	0.5
 Release:	0.1
@@ -31,13 +31,13 @@ of copying music to a media player, thus making it possible to keep
 songs in a loosless format, like FLAC, on the computer, and convert it
 on the fly to Ogg/MP3 to the audio player.
 
-%description -l pl
-Ten skrypt pozwala na przekodowywanie plików z poziomu amaroka
-pomiêdzy wieloma formatami.
+%description -l pl.UTF-8
+Ten skrypt pozwala na przekodowywanie plikÃ³w z poziomu amaroka
+pomiÄ™dzy wieloma formatami.
 
-Najlepsz± rzecz± zwi±zan± z tym skryptem jest to, i¿ pozwala na
-konwertowanie plików w procesie przegrywania muzyki na odtwarzacz
-audio, tym samym pozwalaj±c na trzymanie piosenek w bezstratnym
+NajlepszÄ… rzeczÄ… zwiÄ…zanÄ… z tym skryptem jest to, iÅ¼ pozwala na
+konwertowanie plikÃ³w w procesie przegrywania muzyki na odtwarzacz
+audio, tym samym pozwalajÄ…c na trzymanie piosenek w bezstratnym
 formacie, jak FLAC, na komputerze i konwertowanie w locie do Ogg/MP3
 na odtwarzacz audio.
 
