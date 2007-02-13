@@ -5,7 +5,7 @@
 %define		scriptname	transkode
 %define		_id		27512
 Summary:	Transkode amaroK Script
-Summary(pl.UTF-8):   Skrypt Transkode dla amaroKa
+Summary(pl.UTF-8):	Skrypt Transkode dla amaroKa
 Name:		amarok-script-transkode
 Version:	0.5
 Release:	0.1
