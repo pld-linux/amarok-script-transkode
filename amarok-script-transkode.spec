@@ -3,7 +3,6 @@
 # - cleanup
 #
 %define		scriptname	transkode
-%define		_id		27512
 Summary:	Transkode amaroK Script
 Summary(pl.UTF-8):	Skrypt Transkode dla amaroKa
 Name:		amarok-script-transkode
@@ -15,7 +14,7 @@ Group:		X11/Applications/Multimedia
 Source0:	%{scriptname}-%{version}.tar.bz2
 # Source0-md5:	018e59de11ac70d22f51cb0b82d33070
 Patch0:		%{name}-x86_64.patch
-URL:		http://www.kde-apps.org/content/show.php?content=%{_id}
+URL:		http://www.kde-apps.org/content/show.php?content=27512
 Requires:	amarok >= 1.3
 Requires:	taglib >= 1.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
